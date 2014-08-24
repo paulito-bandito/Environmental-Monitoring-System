@@ -1,0 +1,175 @@
+﻿<Window x:Class="GreenLifeLine_NonBlend.TheWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:GreenLifeLine_NonBlend"
+    Title="Window1" 
+	Width="1110" Height="780" >
+    
+        <Grid x:Name="LayoutRoot">
+            <!-- Details Grid, all sensors -->
+            <Canvas Name="page5" Visibility="Collapsed">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_5.png"></ImageBrush>
+                </Canvas.Background>
+
+
+                <!-- Back button-->
+                <Canvas
+                    Canvas.Left="20"
+                    Canvas.Top="680"
+                    Width="70"
+                    Height="70"
+                    Cursor="Hand"
+                    Background="Transparent"
+                    MouseDown="backButton_MouseDown"
+                    />
+        </Canvas>
+            <Canvas Name="page4" Visibility="Collapsed">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_4.png"></ImageBrush>
+                </Canvas.Background>
+
+
+                <!-- Back button-->
+                <Canvas
+                    Canvas.Left="20"
+                    Canvas.Top="680"
+                    Width="70"
+                    Cursor="Hand"
+                    Height="70"
+                    Background="Transparent"
+                    MouseDown="backButton_MouseDown"
+                    />
+        </Canvas>
+
+            <Canvas Name="page3" Visibility="Collapsed">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_3.png"></ImageBrush>
+                </Canvas.Background>
+
+
+                <!-- Back button-->
+                <Canvas
+                    Canvas.Left="20"
+                    Canvas.Top="680"
+                    Width="70"
+                    Cursor="Hand"
+                    Height="70"
+                    Background="Transparent"
+                    MouseDown="backButton_MouseDown"
+                    />
+            </Canvas>
+            
+            <!-- Areas Page -->
+            <Canvas Name="page2" Visibility="Collapsed">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_2.png"></ImageBrush>
+                </Canvas.Background>
+
+                <!-- Dynamically adding AreaComponents to this page -->
+
+            <Rectangle                 
+                Canvas.Left="120" 
+                Canvas.Top="75" 
+                Width="920" 
+                Height="700" 
+                Name="imageShroud"
+                Visibility="Collapsed"
+                >               
+                    <Rectangle.Fill>                    
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color A="200" R="255" G="255" B="255" />
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+
+
+            <!-- Back button-->
+                <Canvas
+                    Canvas.Left="20"
+                    Canvas.Top="680"
+                    Width="70"
+                    Cursor="Hand"
+                    Height="70"
+                    Background="Transparent"
+                    MouseDown="backButton_MouseDown"
+                    />
+        </Canvas>
+
+            <!-- Maps Page-->
+            <Canvas Name="page1" Visibility="Collapsed">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_1.png"></ImageBrush>
+                </Canvas.Background>
+
+                <!-- Forward button-->
+                <Canvas
+                    Canvas.Left="250"
+                    Canvas.Top="130"
+                    Width="500"
+                    Height="300"
+                    Cursor="Hand"
+                    Background="Transparent"
+                    MouseDown="forwardButton_MouseDown"
+                    />
+
+
+                <!-- Back button-->
+                <Canvas
+                    Canvas.Left="20"
+                    Canvas.Top="680"
+                    Width="70"
+                    Height="70"
+                    Cursor="Hand"
+                    Background="Transparent"
+                    MouseDown="backButton_MouseDown"
+                    />
+            </Canvas>
+            
+            <!-- LOGIN PAGE -->
+            <Canvas Name="page0">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="assets\WPFClient_0.png"></ImageBrush>
+                </Canvas.Background>
+                
+                <!-- Username text area -->
+                <TextBox 
+                    Name="usernameTxtBox"
+                    Width="510" 
+                    Height="20"
+                    Canvas.Left="515"
+                    Canvas.Top="631"/>
+
+                <!-- Password text area -->
+                <TextBox  
+                    Name="passwordTxtBox" 
+                    Width="510" 
+                    Height="20"
+                    Canvas.Left="515"
+                    Canvas.Top="657"/>
+
+                <!-- Login Button-->
+                <Button 
+                    Name="loginBtn"
+                    Width="510" 
+                    Height="29" 
+                    Cursor="Hand"
+                    Click="forwardButton_MouseDown"
+                    Content="Login" 
+                    Canvas.Top="687" 
+                    Canvas.Left="515"                    
+                    Foreground="#FFFFFFFF">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                            <GradientStop Color="#FF666666" Offset="0.9"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Canvas>
+        </Grid>
+  
+</Window>
