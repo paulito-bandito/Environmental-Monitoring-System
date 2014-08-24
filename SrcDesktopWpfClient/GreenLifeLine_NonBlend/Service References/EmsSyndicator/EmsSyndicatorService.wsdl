@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://web.syndication.ems.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmsSyndicatorService" targetNamespace="http://web.syndication.ems.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8081/EmsSyndicationClientTwo/EmsSyndicatorService?xsd=1" namespace="http://web.syndication.ems.com/" />
+    </xsd:schema>
+  </types>
+  <message name="getDomains">
+    <part name="parameters" element="tns:getDomains" />
+  </message>
+  <message name="getDomainsResponse">
+    <part name="parameters" element="tns:getDomainsResponse" />
+  </message>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
+  </message>
+  <message name="getEnvironments">
+    <part name="parameters" element="tns:getEnvironments" />
+  </message>
+  <message name="getEnvironmentsResponse">
+    <part name="parameters" element="tns:getEnvironmentsResponse" />
+  </message>
+  <message name="DAOException">
+    <part name="fault" element="tns:DAOException" />
+  </message>
+  <message name="notes">
+    <part name="parameters" element="tns:notes" />
+  </message>
+  <message name="notesResponse">
+    <part name="parameters" element="tns:notesResponse" />
+  </message>
+  <message name="helloWorld">
+    <part name="parameters" element="tns:helloWorld" />
+  </message>
+  <message name="helloWorldResponse">
+    <part name="parameters" element="tns:helloWorldResponse" />
+  </message>
+  <message name="getDataCapturers">
+    <part name="parameters" element="tns:getDataCapturers" />
+  </message>
+  <message name="getDataCapturersResponse">
+    <part name="parameters" element="tns:getDataCapturersResponse" />
+  </message>
+  <message name="getCurrentData">
+    <part name="parameters" element="tns:getCurrentData" />
+  </message>
+  <message name="getCurrentDataResponse">
+    <part name="parameters" element="tns:getCurrentDataResponse" />
+  </message>
+  <message name="getDataCaptureData">
+    <part name="parameters" element="tns:getDataCaptureData" />
+  </message>
+  <message name="getDataCaptureDataResponse">
+    <part name="parameters" element="tns:getDataCaptureDataResponse" />
+  </message>
+  <message name="getAllSensorRanges">
+    <part name="parameters" element="tns:getAllSensorRanges" />
+  </message>
+  <message name="getAllSensorRangesResponse">
+    <part name="parameters" element="tns:getAllSensorRangesResponse" />
+  </message>
+  <message name="getCurrentSensorRangesForEnvironment">
+    <part name="parameters" element="tns:getCurrentSensorRangesForEnvironment" />
+  </message>
+  <message name="getCurrentSensorRangesForEnvironmentResponse">
+    <part name="parameters" element="tns:getCurrentSensorRangesForEnvironmentResponse" />
+  </message>
+  <message name="getCurrentSensorRanges">
+    <part name="parameters" element="tns:getCurrentSensorRanges" />
+  </message>
+  <message name="getCurrentSensorRangesResponse">
+    <part name="parameters" element="tns:getCurrentSensorRangesResponse" />
+  </message>
+  <message name="snapShots">
+    <part name="parameters" element="tns:snapShots" />
+  </message>
+  <message name="snapShotsResponse">
+    <part name="parameters" element="tns:snapShotsResponse" />
+  </message>
+  <message name="measurements">
+    <part name="parameters" element="tns:measurements" />
+  </message>
+  <message name="measurementsResponse">
+    <part name="parameters" element="tns:measurementsResponse" />
+  </message>
+  <message name="cameras">
+    <part name="parameters" element="tns:cameras" />
+  </message>
+  <message name="camerasResponse">
+    <part name="parameters" element="tns:camerasResponse" />
+  </message>
+  <message name="noteTakers">
+    <part name="parameters" element="tns:noteTakers" />
+  </message>
+  <message name="noteTakersResponse">
+    <part name="parameters" element="tns:noteTakersResponse" />
+  </message>
+  <message name="sensorChannels">
+    <part name="parameters" element="tns:sensorChannels" />
+  </message>
+  <message name="sensorChannelsResponse">
+    <part name="parameters" element="tns:sensorChannelsResponse" />
+  </message>
+  <portType name="EmsSyndicator">
+    <operation name="getDomains">
+      <input message="tns:getDomains" />
+      <output message="tns:getDomainsResponse" />
+    </operation>
+    <operation name="login">
+      <input message="tns:login" />
+      <output message="tns:loginResponse" />
+    </operation>
+    <operation name="getEnvironments">
+      <input message="tns:getEnvironments" />
+      <output message="tns:getEnvironmentsResponse" />
+      <fault name="DAOException" message="tns:DAOException" />
+    </operation>
+    <operation name="notes">
+      <input message="tns:notes" />
+      <output message="tns:notesResponse" />
+    </operation>
+    <operation name="helloWorld">
+      <input message="tns:helloWorld" />
+      <output message="tns:helloWorldResponse" />
+    </operation>
+    <operation name="getDataCapturers">
+      <input message="tns:getDataCapturers" />
+      <output message="tns:getDataCapturersResponse" />
+      <fault name="DAOException" message="tns:DAOException" />
+    </operation>
+    <operation name="getCurrentData">
+      <input message="tns:getCurrentData" />
+      <output message="tns:getCurrentDataResponse" />
+      <fault name="DAOException" message="tns:DAOException" />
+    </operation>
+    <operation name="getDataCaptureData">
+      <input message="tns:getDataCaptureData" />
+      <output message="tns:getDataCaptureDataResponse" />
+    </operation>
+    <operation name="getAllSensorRanges">
+      <input message="tns:getAllSensorRanges" />
+      <output message="tns:getAllSensorRangesResponse" />
+    </operation>
+    <operation name="getCurrentSensorRangesForEnvironment">
+      <input message="tns:getCurrentSensorRangesForEnvironment" />
+      <output message="tns:getCurrentSensorRangesForEnvironmentResponse" />
+      <fault name="DAOException" message="tns:DAOException" />
+    </operation>
+    <operation name="getCurrentSensorRanges">
+      <input message="tns:getCurrentSensorRanges" />
+      <output message="tns:getCurrentSensorRangesResponse" />
+      <fault name="DAOException" message="tns:DAOException" />
+    </operation>
+    <operation name="snapShots">
+      <input message="tns:snapShots" />
+      <output message="tns:snapShotsResponse" />
+    </operation>
+    <operation name="measurements">
+      <input message="tns:measurements" />
+      <output message="tns:measurementsResponse" />
+    </operation>
+    <operation name="cameras">
+      <input message="tns:cameras" />
+      <output message="tns:camerasResponse" />
+    </operation>
+    <operation name="noteTakers">
+      <input message="tns:noteTakers" />
+      <output message="tns:noteTakersResponse" />
+    </operation>
+    <operation name="sensorChannels">
+      <input message="tns:sensorChannels" />
+      <output message="tns:sensorChannelsResponse" />
+    </operation>
+  </portType>
+  <binding name="EmsSyndicatorPortBinding" type="tns:EmsSyndicator">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getDomains">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getEnvironments">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DAOException">
+        <soap:fault use="literal" name="DAOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="notes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="helloWorld">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getDataCapturers">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DAOException">
+        <soap:fault use="literal" name="DAOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DAOException">
+        <soap:fault use="literal" name="DAOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getDataCaptureData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getAllSensorRanges">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getCurrentSensorRangesForEnvironment">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DAOException">
+        <soap:fault use="literal" name="DAOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentSensorRanges">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="DAOException">
+        <soap:fault use="literal" name="DAOException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="snapShots">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="measurements">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cameras">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="noteTakers">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sensorChannels">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="EmsSyndicatorService">
+    <port name="EmsSyndicatorPort" binding="tns:EmsSyndicatorPortBinding">
+      <soap:address location="http://localhost:8081/EmsSyndicationClientTwo/EmsSyndicatorService" />
+    </port>
+  </service>
+</definitions>
