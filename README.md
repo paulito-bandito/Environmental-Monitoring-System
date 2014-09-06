@@ -22,9 +22,11 @@ Ideally, when a new device gets registered, it gets listed in the Technician's v
 
 ### 6.4.2 Scalability ###
 
-Another issue is that this design doesn't scale. It is limited in two ways: the first is that it can only hold as many sensors and web cameras as can be connected to one computer through it's USB and serial ports. Not a very good design, but as this was developed as a proof of concept, it is adequate for now. The second limitation is that it uses an Object Oriented approach which means that multithreading needs to occur and lock shared objects. This would make it very slow at scale. 
+Another issue is that this design doesn't scale. It is limited in two ways: the first is that it can only hold as many sensors and web cameras as can be connected to one computer (again, needs a client server architecture to be addressed) through it's USB and serial ports. Not a very good design, but as this was developed as a proof of concept, it is adequate for now. 
 
-In a future design, the developers should look at distributing the network AND either use funcional programming (C#, Scala, or Erland) or use an Actor Model (in Java, specifically the Play Framework). 
+The second limitation is that it uses an Object Oriented approach which means that multithreading needs to occur and lock shared objects and result in possible performance bottle-necks. This would make it very slow at scale. 
+
+In a future design, the developers should look at distributing the network AND either use funcional programming (C#, Scala, or Erland) or use an Actor Model (like in Java how it's used by Akka in the Play Framework). 
 
 ### 6.4.3 Cross Platform Capabilities for the Client GUI ###
 
@@ -36,17 +38,17 @@ In addition to the GUIs that already exist, there should be another one, perhaps
 
 ### 6.4.5 Authentication ###
 
-This is something that needs to be addressed. At the moment, the database doesn't use MD5 hasing for passwords, nor is there a “I forgot my password” functionality.
+This is something that needs to be addressed and added as a use case(s). At the moment, the database doesn't use MD5 hasing for passwords, nor is there a “I forgot my password” functionality.
 
 ### 6.4.6 Java Media Framework (JMF) is Dead ###
 
 The JMF is the library I used to interact with a web camera. One of the things discovered during this process is that the JMF is only partially implemented and doesn't have any plans to complete. The incredibly frustrating thing is that the project doesn't say this anywhere. It's only digging through user group posts on the “Stack Overflow” site, that I found this. 
 
-This project may want to look at, in the future, writing the Sensor Client in C++ or Python . Both of these languages have far richer support for interacting with hardware. Java's strength seems to be with business computing (i.e. running a server). It doesn't want to get it's hands dirty with the low-level of hardware. 
+This project may want to look at, in the future, writing the Sensor Client in C++ or Python . Both of these languages have far richer support for interacting with hardware. Java's strength seems to be more with robust business computing. It always needs to delegate to a native library anyways (well, Python also does this too, but, given a quick glance, seems to do it better). 
 
 C++ also has a library called “Open Layers” which might be worth a look. 
 
-Java has another library which is slated to be complete in the future, but after the way that Java Media Framwork went, I don't have much faith. It's name is Freedom for Media in Java (FMJ).
+Java has another library which is slated to be complete in the future, but after the way that Java Media Framwork went, I don't have much faith because most of Sun/Oracle's stake is in business/cloud computing. It's name is Freedom for Media in Java (FMJ).
 
 ### 6.4.7 “1 Wire” Framework is Limited ###
 
