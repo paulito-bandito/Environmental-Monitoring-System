@@ -1,15 +1,15 @@
-Environmental-Monitoring-System
-===============================
+# Environmental-Monitoring-System #
+# =============================== #
 
 This is a decision support system for maintaining indoor biomes which utilizes sensors, webcams, email notifications
 
 It has three parts: 
 
-1.) Data Logging (all sensors and devices) which runs separately and writes to a database or writes files to a local folder (which you specify in the dao.properties file)
-2.) Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
-3.) The Desk Top Client: this is a WPF client that accessess the Web Services. 
+i. Data Logging (all sensors and devices) which runs separately and writes to a database or writes files to a local folder (which you specify in the dao.properties file)
+ii. Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
+iii. The Desk Top Client: this is a WPF client that accessess the Web Services. 
 
-* Please note, this is a prototype and had the following issues! *
+## * Please note, this is a prototype and had the following issues! * ##
 
 6.4 Appendix E: Issues List
 6.4.1 Registering new devices into the system
