@@ -14,9 +14,9 @@ It has the following parts:
 
 ### 6.4.1 Registering new devices into the system ###
 
-The first issue is that I didn't work into the use case diagram the need for the technician to register sensors. This is addressed regardless in the resulting software: the sensor client scans its network, finds all the network addresses on the network, and logs it to the database (this is where the pieces will need to be pulled apart into a Server/Client architecture) . The client/server saves any addresses not already in the database into the database. The problem is that it doesn't know what kind of sensor is being reported. The technician needs to go in later and manually update the database. 
+The first issue is that I didn't work into the use case diagram the need for the technician to register sensors. This is addressed regardless in the resulting software: the sensor client scans its network, finds all the network addresses on the network, and logs it to the database (this is where the pieces will need to be pulled apart into a Server/Client architecture) . The client/server saves any addresses not already in the database into the database. The problem is that the client/server doesn't know what kind of input device is initially being reported. The technician needs to go in later and manually update the database. If this were to scale, then sensors could get registered incorrectly.  
 
-In addition to the use case diagram, there needs to be another use case added that illustrates how this interaction will occur. This isn't in the Mock up, and it is a mystery as to what is the best course of action. 
+In addition to the use case diagram, there needs to be another use case added that illustrates how this interaction will occur in a client/server set up. 
 
 Ideally, when a new device gets registered, it gets listed in the Technician's view of the system as a notification, and then the Technician can make the semantic decision as to what type of sensor this is so it's measurements get assigned the correct metrics (temp, lux, percent humidity). 
 
@@ -56,6 +56,6 @@ This framework was only ever meant as a hobbyist tool and has access to only the
 
 ### 6.4.8 This project needs to be Geospatial. ###
 
-This prototype needs to be Geospatial in the future. At the moment the Technician needs to manually specify (in the databse) the  location of the sensors in the database so they show up in the correct location when rendered to the Technician GUI. In the future the Data Model needs to be changed to incorporate GPS locations as well as indoor GPS capabilities so that maps can be rendered to the screen that are accurate, and not hand-drawn. 
+This prototype needs to be Geospatial in the future. At the moment it's just not clear where that particular input device lives, and so the Technician needs to manually specify (in the databse) the location of the sensors in the database so they show up in the correct location when rendered to the Technician GUI. In the future the Data Model needs to be changed to incorporate GPS locations as well as indoor GPS capabilities so that maps can be rendered to the screen that are accurate, and not hand-drawn. 
 
 The Sensor Client in the future might need to be GPS aware to help with the data logging aspect of the application. 
