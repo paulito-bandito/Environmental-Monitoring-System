@@ -1,0 +1,1 @@
+This folder is specifically left empty. The data logging happens in the sister application included in this project. 
