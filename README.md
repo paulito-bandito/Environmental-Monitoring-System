@@ -8,7 +8,7 @@ It has three parts:
 2. Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
 3. The Desk Top Client: this is a WPF client that accessess the Web Services. 
 
-## * Please note, this is a *** prototype *** and had the following issues! * ##
+## * Please note, this is a prototype and had the following issues! * ##
 
 ### 6.4.1 Registering new devices into the system ###
 
@@ -50,7 +50,7 @@ Java has another library which is slated to be complete in the future, but after
 
 This framework was only ever meant as a hobbyist tool and has access to only the limited devices for hobbyists. In the future you need to consider using the “I2C” for sensor networks. It is like “1 Wire” in that it only needs one wire to communicate with sensor nodes, BUT it is an industry standard and is used for mission critical devices, yet retains a reasonable level of complexity.
 
-### 6.4.8 This project needs to be Geospatial. ### 
+### 6.4.8 This project needs to be Geospatial. ###
 
 This prototype needs to be Geospatial in the future. At the moment the Technician needs to manually specify (in the databse) the  location of the sensors in the database so they show up in the correct location when rendered to the Technician GUI. In the future the Data Model needs to be changed to incorporate GPS locations as well as indoor GPS capabilities so that maps can be rendered to the screen that are accurate, and not hand-drawn. 
 
