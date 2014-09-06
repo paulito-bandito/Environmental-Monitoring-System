@@ -7,6 +7,7 @@ It has three parts:
 1. Data Logging (all sensors and devices) which runs separately and writes to a database or writes files to a local folder (which you specify in the dao.properties file)
 2. Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
 3. The Desk Top Client: this is a WPF client that accessess the Web Services. 
+4. The Database Script: Needs to be set up on a server and it's IP address specified in the "dao.properties" file in both Web and Data Logging projects (because it is a property file, you don't need to recompile)
 
 ## * Please note, this is a prototype and had the following issues! * ##
 
@@ -44,7 +45,7 @@ This project may want to look at, in the future, writing the Sensor Client in C+
 
 C++ also has a library called “Open Layers” which might be worth a look. 
 
-Java has another library which is slated to be complete in the future, but after the way that Java Media Framwork went, I don't have much faith. It's name is Freedom for Media in Java (FMJ). It simplifies the 
+Java has another library which is slated to be complete in the future, but after the way that Java Media Framwork went, I don't have much faith. It's name is Freedom for Media in Java (FMJ).
 
 ### 6.4.7 “1 Wire” Framework is Limited ###
 
