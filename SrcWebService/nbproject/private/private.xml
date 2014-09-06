@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>jar:file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/dao.zip!/dao.properties</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/web/EmsSyndicator.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/data/SyndicationDAOFactory.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/data/CaptureDeviceDAO.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/business/SensorChannel.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/business/ACaptureData.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/syndication/business/ADescription.java</file>
+            <file>file:/Users/manolo/Documents/workspace/ems_orig/Environmental-Monitoring-System/SrcWebService/src/java/com/ems/datalogging/readme.md</file>
+        </group>
+    </open-files>
 </project-private>
