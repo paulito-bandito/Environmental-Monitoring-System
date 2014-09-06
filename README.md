@@ -8,7 +8,8 @@ It has the following parts:
 2. Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
 3. The Desk Top Client: this is a WPF client that accessess the Web Services. 
 4. The Database Script: Needs to be set up on a server and it's IP address specified in the "dao.properties" file in both Web and Data Logging projects (because it is a property file, you don't need to recompile)
-
+5. The Software Requirement Specification (SRS) Document used to develop and illustrate the workings of this software. It contains the Intent, Use Cases, Class Diagrams, Sequence Diagrams, Entity Relationship Diagrams (ERD), and graphical Mock Ups used to develop this project. 
+ 
 ## * Please note, this is a prototype and had the following issues! * ##
 
 ### 6.4.1 Registering new devices into the system ###
