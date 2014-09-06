@@ -14,7 +14,9 @@ It has the following parts:
 
 ### 6.4.1 Registering new devices into the system ###
 
-The first issue is that I didn't work into the use case diagram the need for the technician to register sensors. This is addressed regardless in the resulting software: the sensor client scans its network, finds all the network addresses on the network, and logs it to the database (this is where the pieces will need to be pulled apart into a Server/Client architecture) . The client/server saves any addresses not already in the database into the database. The problem is that the client/server doesn't know what kind of input device is initially being reported. The technician needs to go in later and manually update the database. If this were to scale, then sensors could get registered incorrectly.  
+The first issue is that I didn't work into the use case diagram the need for the technician to register sensors to a particular client/domain. This is somewhat addressed regardless in the resulting prototype: the sensor client scans its network, finds all the network addresses on the network (and listens for new arrivals), and logs it to the database (this is where the pieces will need to be pulled apart into a Server/Client architecture) . The client/server saves any addresses not already in the database into the database. 
+
+The problem is that the client/server doesn't know what kind of input device is initially being reported. The technician needs to go in later take a best guess as to what the sensor address is (for example it could be '1AC366785657') and manually update the database. If this were to scale, then sensors could get registered incorrectly.  
 
 In addition to the use case diagram, there needs to be another use case added that illustrates how this interaction will occur in a client/server set up. 
 
