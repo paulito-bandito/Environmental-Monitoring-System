@@ -38,7 +38,6 @@ import javax.media.format.*;
 import javax.media.protocol.*;
 import java.awt.image.*;
 import com.sun.media.codec.video.jpeg.NativeEncoder;
-import com.sun.image.codec.jpeg.*;
 
 // If you prefer to amend the sun example FrameAccess.java then to get every frame include
 import java.awt.font.TextAttribute;
