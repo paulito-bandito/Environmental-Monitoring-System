@@ -2,7 +2,7 @@
 
 This is a decision support system for maintaining indoor biomes which utilizes sensors, webcams, email notifications
 
-It has three parts: 
+It has the following parts: 
 
 1. Data Logging (all sensors and devices) which runs separately and writes to a database or writes files to a local folder (which you specify in the dao.properties file)
 2. Web Syndication: via SOAP Web Services. It accesses the data through the database, or through the folder specified to contain the JPEG images.
